@@ -88,8 +88,8 @@ template_image = cv2.imread("Template\\template1.jpg")
 template_mask = cv2.imread("Mask\\template1.png", cv2.IMREAD_GRAYSCALE)
 
 # Load test image and mask
-test_image = cv2.imread("test\\test3.jpg")
-test_mask = cv2.imread("test_mask\\test3.png", cv2.IMREAD_GRAYSCALE)
+test_image = cv2.imread("test\\test1.jpg")
+test_mask = cv2.imread("test_mask\\test1.png", cv2.IMREAD_GRAYSCALE)
 
 # Calculate rotation angle and test rectangle from mask
 rotation_angle, bbox_rotation_angle, test_rect = calculate_rotation_angle(template_mask, test_mask)
