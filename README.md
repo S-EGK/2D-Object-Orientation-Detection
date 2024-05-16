@@ -42,7 +42,7 @@ Run the following script to train the UNet model:
 This script will:
 1. Load and preprocess the template images and their corresponding masks using an image generator.
 2. Train a UNet model to segment the object of interest.
-3. Save the trained model and training metrics in the 'Model' folder.
+3. Save the trained model and training metrics in the `Model` folder.
 
 ### Step 2: Create Masks for Test Images
 Run the following script to generate masks for the test images:
@@ -53,7 +53,7 @@ Run the following script to generate masks for the test images:
 This script will:
 1. Load the trained UNet model.
 2. Generate masks for the test images.
-3. Save the generated masks in the 'test_mask' folder.
+3. Save the generated masks in the `test_mask` folder.
 
 ### Step 3: Calculate Rotation Angle
 Run the following script to calculate the rotation angle and draw bounding boxes:
