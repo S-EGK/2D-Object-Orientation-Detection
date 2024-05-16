@@ -69,7 +69,7 @@ This script will:
 
 ## Example
 Here is an example of the output image with the bounding box around the detected object and the rotation angle annotated.
-![Example Output](path/to/image.png)
+![Example Output](example.png)
 
 ## Acknowledgments
 1. The UNet model architecture is inspired by the paper: U-Net: Convolutional Networks for Biomedical Image Segmentation.
