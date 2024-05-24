@@ -88,8 +88,8 @@ template_image = cv2.imread("Template\\template1.jpg")
 template_mask = cv2.imread("Mask\\template1.png", cv2.IMREAD_GRAYSCALE)
 
 # Load test image and mask
-test_image = cv2.imread("test\\test1.jpg")
-test_mask = cv2.imread("test_mask\\test1.png", cv2.IMREAD_GRAYSCALE)
+test_image = cv2.imread("test\\test4.jpg")
+test_mask = cv2.imread("test_mask\\test4.png", cv2.IMREAD_GRAYSCALE)
 
 # Calculate rotation angle and test rectangle from mask
 rotation_angle, bbox_rotation_angle, test_rect = calculate_rotation_angle(template_mask, test_mask)
@@ -130,6 +130,9 @@ cv2.putText(final_image, 'Rotation Angle from bbox: {:.2f} degrees'.format(bbox_
 cv2.imshow("Final Template(left) and Test(right) Image", final_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# Save the final image
+cv2.imwrite("output\\final_image1_4.png", final_image)
 
 # Print rotation angle
 print("Rotation Angle from mask:", rotation_angle)
